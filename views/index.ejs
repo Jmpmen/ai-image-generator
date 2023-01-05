@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon-32x32.png"/>
+    <title>AI Image Generator</title>
+</head>
+<body>
+    <header>
+        <h2><a href="/">AI Image Generator</a></h2>
+    </header>
+    <main class="hero">
+        <h2>Describe an Image</h2>
+        <form action="/" method="POST">
+            <input type="text" name="userInput" placeholder="Enter text" required/>
+            <select name="size" required>
+                <option value="512x512" selected>Medium</option>
+                <option value="256x256">Small</option>
+                <option value="1024x1024">Large</option>
+            </select>
+            <button type="submit">Generate Image</button>
+        </form>
+    </main>
+
+    <section class="image">
+        <img src="<%= image %>" alt="">
+        <h2><%= msg %></h2>
+    </section>
+
+    <footer>
+        <p>Copyright © 2023 - All rights reserved by <a href="http://jmpmen.netlify.app">James Michael Mendoza</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
