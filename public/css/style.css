@@ -97,3 +97,12 @@ img {
 .image h2 {
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    .hero form input, form select {
+        max-width: 320px;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
